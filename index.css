@@ -131,6 +131,7 @@ max-width: 600px ;
   box-shadow: -5px 5px 0px 0px #f5a001;
   position: relative;
   margin-right: 18px ;
+  text-decoration: none;
 }
 
 .boton-1:hover,
@@ -279,4 +280,13 @@ margin-left: -10px;
   font-weight: 700;
   color: #f5a001;
   text-align: center;
+}
+.h23{
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around; 
+  margin-left: 830px;
+  margin-top: 10px;
+  color: #e6e6e6;
 }
