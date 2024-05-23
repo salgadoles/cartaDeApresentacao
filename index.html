@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <nav class="menu-lateral">
+
+        <div class="btn-expandir">
+          <i class="bi bi-list" id="btn-exp"></i>
+        </div> <!--botão expandir-->
+    <ul>
+      <li class="item-menu ativo"> <!--logo nome sadbar-->
+        <a href="#home">
+          <span class="icon"><i class="bi bi-house-door-fill"></i></span>
+          <span class="txt-link">inicío</span>
+        </a>
+      </li>
+    
+      <li class="item-menu">
+        <a href="#infos">
+          <span class="icon"><i class="bi bi-person-vcard"></i></i></span>
+          <span class="txt-link">dados </span>
+        </a>
+    
+        
+      </li>
+    
+      <li class="item-menu">
+        <a href="#carta">
+          <span class="icon"><i class="bi bi-journal-text"></i></i></span>
+          <span class="txt-link">apresentação</span>
+        </a>
+      </li>
+    
+      <li class="item-menu">
+        <a href="#contatos">
+          <span class="icon"><i class="bi bi-telephone"></i></span>
+          <span class="txt-link">contato</span>
+        </a>
+      </li>
+    </ul>
+        </nav>
+        
+        <div class="profile-picture">
+          <img src="WhatsApp Image 2024-05-10 at 10.47.32.jpeg" alt="Sua Foto">
+      </div>
+       <section class="home">
+        <div id="home" class="home-content">
+            <h1>Olá, eu sou o Samuel!</h1>
+            <h3>front-end iniciante</h3>
+            <p>Bem vindo a minha carta de apresentção para sua empresa, aqui falo um pouco de mim e minhas habilidades para que possamos ter um primeiro contato, desde já, obrigado pela atenção.</p>
+       
+        <button class="boton-1">download cv</button>
+        <button class="boton-2" onclick="scrollToSection('contatos')">Contato</button>
+
+
+       </div>
+       </section>
+       <div class="links">
+        <a onclick="window.location.href = 'https://www.instagram.com/sal.gov.br/';"><i class="bi bi-instagram"></i></a>
+        <a onclick="window.location.href = 'https://github.com/salgadoles';"><i class="bi bi-github"></i></a>
+        <a onclick="window.location.href = 'https://www.linkedin.com/in/samuel-lima-do-amaral-713542297/';"><i class="bi bi-linkedin"></i></a>
+       </div>
+
+       <div id="infos" class="infos">
+        <h3>DADOS PESSOAIS.</h3>
+        <P>Samuel Lima do Amaral.</P>
+        <p>(43)96050839.</p>
+        <p >rua cecilia camilo de godoy, 70.</p>
+        <p>Paraná, PR.</p>
+        <p>Brasil.</p>
+
+       </div>
+       <div id="carta" class="carta">
+        <h4>CARTA.</h4>
+        <P>Olá! Sou Samuel Lima do Amaral, estudante do segundo ano do Ensino Médio, atualmente cursando o Ensino Médio Técnico de Informática para Internet no Colégio Marista Irmão Acácio. Neste ambiente, concentro meus estudos em programação, engenharia de sistemas, engenharia de banco de dados, design e biotecnologia. Além disso, tenho a oportunidade de participar do empolgante projeto de criação de foguetes no Instituto Federal do Paraná. <br><br>
+
+          Tenho um forte interesse em tecnologia e busco uma oportunidade profissional onde possa contribuir de forma significativa. Estou aberto para atuar em diversas áreas dentro da sua empresa, mesmo que não estejam diretamente relacionadas às minhas competências técnicas, pois tenho facilidade em me adaptar, e cada experiência vai agregar valor ao meu desenvolvimento pessoal é profissional. <br> Possuo habilidades de comunicação e trabalho em equipe, o que me permite colaborar efetivamente em ambientes colaborativos. Além disso, tenho conhecimentos em inteligência artificial, ampliando minha capacidade de enfrentar desafios de forma proativa e buscar maneiras inovadoras de contribuir positivamente. <br><br>
+          
+          No campo da programação, possuo experiência em HTML, CSS e JavaScript, e estou aprofundando meus estudos em bibliotecas de JavaScript como o React. Também estou matriculado no curso Start 5.0 da Escola Digital SAGA, onde estudo o módulo de Motion Design e planejo expandir meu conhecimento para áreas como modelagem 3D, arte vetorial, composição de imagem e outras. <br><br>
+          
+          Adquiri um breve conhecimento sobre Arduino por meio de um curso realizado no   NAAHS (Núcleo de Atividades de Altas Habilidades)  no primeiro trimestre de 2023. <br><br>
+          
+          
+          Tive experiências profissionais variadas, incluindo um ano como designer gráfico autônomo e trabalho com anúncios online como secretário em uma revenda de carros usados de 2019 a 2022. Isso complementa meu perfil e amplia minhas capacidades para contribuir de forma abrangente em projetos e equipes.
+          Estou animado para me conectar com profissionais da área e explorar oportunidades que me permitam continuar crescendo e contribuindo para o mundo da tecnologia e inovação. <br><br>
+          </P>
+       </div>
+    <h3 class="cont">CONTATOS</h3>
+       </div>
+       <div id="contatos" class="contatos">
+        <button  onclick="window.location.href = 'https://www.linkedin.com/in/samuel-lima-do-amaral-713542297/';"><i class="bi bi-linkedin"></i></button>
+        <button onclick="window.location.href = '';"><i class="bi bi-whatsapp"></i></button>
+        <button onclick=window.location.href = "mailto: salgabrowndazn@gmail.com"><i class="bi bi-envelope-at"></i> </button>
+        <h2>sa</h2>
+        <h2>(43)996050839</h2>
+        <h2>samuellimadoamaral.prof@gmail.com</h2>
+       </div>
+    <img class="gira" src="a40ddf10eb82c6ff7d2ee4dbbc5a120a-removebg-preview.png" alt="">
+        <script src="index.js"></script>
+</body>
+</html>
