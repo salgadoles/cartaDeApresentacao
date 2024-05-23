@@ -78,3 +78,5 @@ A estrutura do projeto é organizada da seguinte forma:
 
 ## Licença
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+## Contato
+caso tenha interesse de apontar melhorias ou dicas, sinta-se a vontade para me mandar um e-mail em: salgabrowndazn@gmail.com
