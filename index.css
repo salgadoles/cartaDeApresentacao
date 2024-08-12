@@ -1,79 +1,278 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
-
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+    height: 100vh;
     background-color: #110c0c;
     color: #fff;
 }
-
-.navbar {
-    z-index: 1000;
-}
-
-.menu-lateral {
+nav.menu-lateral{
     width: 70px;
-    height: 100vh;
+    height: 100%;
     background-color: #202020;
-    padding: 40px 0;
+    padding: 40px 0 40px 1%;
     box-shadow: 3px 0 0 #f5a001;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
     transition: .5s;
-}
-
-.btn-expandir {
+    z-index: 2;
+  }
+  nav.menu-lateral.expandir{
+  width: 280px;
+  }
+  
+  
+  .btn-expandir {
     width: 100%;
     padding-left: 10px;
-}
-
-.navbar-nav .nav-link {
+  }
+  .btn-expandir > i{
     color: #fff;
-}
-
-.navbar-nav .nav-link.active {
-    background-color: #f5a001;
-}
-
-.profile-picture {
-    width: 100%;
-    max-width: 350px; 
-    height: auto; 
-    border-radius: 50%; 
-    overflow: hidden; 
-    border: 5px solid #f5a001;
-    margin: 0 auto;
-}
-
-.links a {
-    color: #ffffff;
-    text-decoration: none;
     font-size: 24px;
-    background: transparent;
-    width: 40px;
-    height: 40px;
-    border: 2px solid #f5a001;
-    border-radius: 50%;
-    margin: 3px;
-}
-
-.infos, .carta, .contatos {
-    margin: 0 auto;
-    max-width: 800px;
-}
-
-.btn-outline-warning, .btn-outline-light {
-    border: 3px solid #f5a001;
-    color: #f5a001;
-    transition: color 0.2s, border-color 0.2s;
-}
-
-.btn-outline-warning:hover, .btn-outline-light:hover {
-    color: #110c0c;
+    cursor : pointer; 
+  }
+  
+  ul{
+    height: 100%;
+    list-style-type: none;
+  }
+  
+  ul li.item-menu{
+    transition: .3s;
+  }
+  
+  ul li.ativo{
     background-color: #f5a001;
-    border-color: #f5a001;
+  }
+  ul li.item-menu:hover{
+   background: #f5a001;
+  }
+  
+  ul li.item-menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+  }
+  
+  ul li.item-menu a .txt-link{
+  margin-left: 60px;
+  transition: .5s;
+  opacity: 0;
+  }
+  
+  nav.menu-lateral.expandir .txt-link{
+    margin-left: 30px;
+    opacity: 1;
+  }
+  
+  ul li.item-menu a .icon > i{
+    font-size: 30px;
+   margin-left: 5px;
+  }
+  
+.home{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  position: relative;
+}
+.home-content{
+max-width: 600px ;
+}
+.home-content h1{
+  font-size: 50px;
+  font-weight: 900;
+  color: #fff;
+}
+.home-content h3{
+  font-size: 32px;
+  font-weight: 700;
+  color: #f5a001
+}
+.home-content p {
+  font-size: 15px;
+  font-weight: 300;
+  margin: 15px;
+  margin-top: 30px;
+  margin-left: -5px;
+  position: relative;
+}
+.boton-1,
+.boton-2 {
+  margin-top: 10px;
+  width: 180px;
+  height: 50px;
+  font-size: 1rem;
+  padding: 0.8em 2em;
+  background-color: #110c0c;
+  border: 3px solid #f5a001;
+  border-radius: 3em;
+  color: #fff;
+  font-weight: bolder;
+  transition: cubic-bezier(0.175, 0.885, 0.300, 1.275) 0.5s;
+  box-shadow: -5px 5px 0px 0px #f5a001;
+  position: relative;
+  margin-right: 18px ;
+  text-decoration: none;
 }
 
-.text-center {
-    text-align: center;
+.boton-1:hover,
+.boton-2:hover {
+  transform: translate(5px, -5px);
 }
-
-.mt-5 {
-    margin-top: 3rem !important;
+.links{
+  position: absolute;
+  bottom: 40px;
+  width: 170px;
+  align-items: center;
+  right: 1030px;
+  top: 570px;
+}
+.links a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bolder;
+  padding: 20px;
+  display: inline-flex;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #f5a001;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+  position: relative;
+  overflow: hidden;
+  transition: .5s;
+}
+.links a:hover {
+  color: #ffffff;
+}
+.links a::before{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #f5a001;
+  z-index: -1;
+  transition: .5s;
+}
+.links a:hover::before{
+width: 100%;
+}
+.container {
+  position: relative; /* Define a posição relativa para que possamos posicionar o círculo de forma absoluta */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile-picture {
+  width: 350px; 
+  height: 350px; 
+  border-radius: 50%; 
+  overflow: hidden; 
+  border: 5px solid #f5a001;
+  position: absolute;
+  right: 90px;
+  top: 320px; 
+  transform: translateY(-50%);
+}
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.infos{
+ text-align: center;
+ padding-top: 100px;
+}
+.infos h3{
+  margin-top: 20px;
+  font-size: 60px;
+  font-weight: 700;
+  color: #f5a001
+}
+.infos p{
+  font-size: 20px;
+  font-weight: 300;
+  margin: 15px;
+  margin-top: 12px;
+  margin-left: -5px;
+  position: relative;
+  
+}
+.carta h4{
+  margin-top: 120px;
+  font-size: 60px;
+  font-weight: 700;
+  color: #f5a001;
+  text-align: center;
+}
+.carta p{
+  font-size: 20px;
+  font-weight: 300;
+  margin: 230px;
+  text-align: center;
+  margin-top: 70px;
+  line-height: 40px;
+  
+}
+.contatos button{
+margin-left: 260px;
+  margin-top: -20px;
+  width: 100px;
+  height: 100px;
+  font-size: 1rem;
+  padding: 0.8em 2em;
+  background-color: #110c0c;
+  border: 4px solid #f5a001;
+  border-radius: 3em;
+  color: #fff;
+  font-weight: bolder;
+  transition: cubic-bezier(0.175, 0.885, 0.300, 1.275) 0.5s;
+  position: relative;
+  margin-right: 18px ;
+ 
+}
+.contatos button:hover{
+  transform: translate(5px, -5px);
+}
+.contatos i{
+font-size: 50px;
+margin-left: -10px;
+}
+.gira{
+  position: static;
+  margin-top: -410px;
+}
+.cont{
+  margin-bottom: 200px;
+  font-size: 60px;
+  font-weight: 700;
+  color: #f5a001;
+  text-align: center;
+}
+.h23{
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around; 
+  margin-left: 830px;
+  margin-top: 10px;
+  color: #e6e6e6;
 }
