@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+
 * {
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
+
 body{
     height: 100vh;
     background-color: #110c0c;
     color: #fff;
+
 }
+
 nav.menu-lateral{
     width: 70px;
     height: 100%;
@@ -86,6 +91,7 @@ nav.menu-lateral{
   align-items: center;
   padding: 0 10%;
   position: relative;
+
 }
 .home-content{
 max-width: 600px ;
@@ -95,6 +101,7 @@ max-width: 600px ;
   font-weight: 900;
   color: #fff;
 }
+
 .home-content h3{
   font-size: 32px;
   font-weight: 700;
@@ -131,6 +138,7 @@ max-width: 600px ;
 .boton-2:hover {
   transform: translate(5px, -5px);
 }
+
 .links{
   position: absolute;
   bottom: 40px;
@@ -138,6 +146,7 @@ max-width: 600px ;
   align-items: center;
   right: 1030px;
   top: 570px;
+
 }
 .links a{
   color: #ffffff;
@@ -173,6 +182,7 @@ max-width: 600px ;
   transition: .5s;
 }
 .links a:hover::before{
+
 width: 100%;
 }
 .container {
@@ -181,6 +191,7 @@ width: 100%;
   justify-content: space-between;
   align-items: center;
 }
+
 .profile-picture {
   width: 350px; 
   height: 350px; 
@@ -192,6 +203,7 @@ width: 100%;
   top: 320px; 
   transform: translateY(-50%);
 }
+
 .profile-picture img {
   width: 100%;
   height: 100%;
@@ -223,6 +235,7 @@ width: 100%;
   color: #f5a001;
   text-align: center;
 }
+
 .carta p{
   font-size: 20px;
   font-weight: 300;
@@ -232,6 +245,7 @@ width: 100%;
   line-height: 40px;
   
 }
+
 .contatos button{
 margin-left: 260px;
   margin-top: -20px;
